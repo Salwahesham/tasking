@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>منتجات</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap" rel="stylesheet">
+
+
+ 
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h2 class="gradient-text">Shopping</h2>
+
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact" style="background-color:#fff; color:#004d66; border-radius: 2px;">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- الكروت الخاصة بالمنتجات -->
+    <div class="cards-container">
+        <!-- كارد 1 -->
+        <div class="product-card" onclick="addToTable('حذاء رياضي', 700, 'image/51m.jpg')">
+            <img id="mainImage1" src="image/51m.jpg" alt="Shoe Image" class="main-image">
+            <div class="product-info">   
+                <p>وصف: حذاء رياضي مريح</p>
+                <p class="price">سعر: 700.00 جنيه</p>
+            </div>
+        </div>
+
+        <!-- كارد 2 -->
+        <div class="product-card" onclick="addToTable('ملابس أطفال', 500, 'image/boys-no-7-clothing-set.jpg')">
+            <img id="mainImage2" src="image/boys-no-7-clothing-set.jpg" alt="Clothes Image" class="main-image">
+            <div class="product-info">
+              
+                <p>وصف: ملابس أطفال أنيقة</p>
+                <p class="price">سعر: 500.00 جنيه</p>
+            </div>
+        </div>
+
+        <!-- كارد 3 -->
+        <div class="product-card" onclick="addToTable('حذاء رياضي أسود', 750, 'image/51m3.jpg')">
+            <img src="image/51m3.jpg" alt="Black Sneakers" class="main-image">
+            <div class="product-info">
+            
+                <p>وصف: حذاء رياضي أسود أنيق</p>
+                <p class="price">سعر: 750.00 جنيه</p>
+            </div>
+        </div>
+
+        <!-- كارد 4 -->
+        <div class="product-card" onclick="addToTable('فستان بناتي', 600, 'image/girls-dress.jfif')">
+            <img src="image/girls-dress.jfif" alt="Girls Dress" class="main-image">
+            <div class="product-info">
+           
+                <p>وصف: فستان جميل للفتيات</p>
+                <p class="price">سعر: 600.00 جنيه</p>
+            </div>
+        </div>
+
+        <!-- كارد 5 -->
+        <div class="product-card" onclick="addToTable('حذاء شتوي', 800, 'image/51m2.webp')">
+            <img src="image/51m2.webp" alt="Winter Shoes" class="main-image">
+            <div class="product-info">          
+                <p>وصف: حذاء شتوي دافئ</p>
+                <p class="price">سعر: 800.00 جنيه</p>
+            </div>
+        </div>
+
+        <!-- كارد 6 -->
+        <div class="product-card" onclick="addToTable('تيشيرت قطن', 250, 'image/cotton-tshirt.jpg')">
+            <img src="image/cotton-tshirt.jpg" alt="Cotton T-shirt" class="main-image">
+            <div class="product-info">
+              
+                <p>وصف: تيشيرت قطن مريح</p>
+                <p class="price">سعر: 250.00 جنيه</p>
+            </div>
+        </div>
+
+        <!-- كارد 7 -->
+        <div class="product-card" onclick="addToTable('بنطلون جينز', 300, 'image/jeans.jpeg')">
+            <img src="image/jeans.jpeg" alt="Jeans" class="main-image">
+            <div class="product-info">
+              
+                <p>وصف: بنطلون جينز عصري</p>
+                <p class="price">سعر: 300.00 جنيه</p>
+            </div>
+        </div>
+
+        <!-- كارد 8 -->
+        <div class="product-card" onclick="addToTable('جاكيت شتوي', 900, 'image/winter-jacket.jpg')">
+            <img src="image/winter-jacket.jpg" alt="Winter Jacket" class="main-image">
+            <div class="product-info">
+                <p>وصف: جاكيت شتوي أنيق</p>
+                <p class="price">سعر: 900.00 جنيه</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- الجدول الخاص بالمنتجات المضافة -->
+    <table id="productTable">
+        <thead>
+            <tr>
+                <th>الصورة</th>
+                <th>المنتج</th>
+                <th>السعر</th>
+                <th>الكمية</th>
+                <th>الإجمالي</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- سيتم إضافة المنتجات هنا -->
+        </tbody>
+    </table>
+
+   <script src="js/script.js"></script>
+
+</body>
+</html>
